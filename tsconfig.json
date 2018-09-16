@@ -1,0 +1,29 @@
+{
+	"compilerOptions": {
+		"target": "ES5",
+		"sourceMap": true,
+		//"module": "commonjs", // module format used by Node
+		"outDir": "dist",
+		/* typeroots need to be set if tsconfig.json and node_modules are not in the same folder: 
+		   https://github.com/Microsoft/TypeScript/issues/9725
+		"typeRoots": [
+			"../node_modules/@types"
+		],*/
+		"emitDecoratorMetadata": true,
+		"experimentalDecorators": true,
+		"importHelpers": false, // set this to 'true' to automatically import helpers from 'tslib'
+		// "noEmitHelpers": true, // you'll have to provide the TypeScript helper class as a separate .js file
+		"noImplicitAny": true, // strict type checking if possible, raise errors on expressions and declarations with an implied any type
+		"strictNullChecks": false, // see types-strictNullChecks.ts
+		"lib": ["dom", "es2015.promise", "es5"] // enables the use of async / await with ES5
+	},
+	"include": [
+		"src/**/*"
+	],
+	"exclude": [
+		"node_modules",
+		".vscode",
+		"dist",
+		"libs"
+	]
+}

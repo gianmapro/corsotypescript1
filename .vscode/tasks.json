@@ -1,0 +1,60 @@
+{
+    // See https://go.microsoft.com/fwlink/?LinkId=733558
+    // for the documentation about the tasks.json format
+    "version": "0.1.0",
+    "command": "gulp",
+    "isShellCommand": true,
+    "args": [
+        "--no-color"
+    ],
+    "showOutput": "always",
+    "tasks": [
+        {
+            "taskName": "compile-ts",
+            //"args": ["--suppressExcessPropertyErrors"],
+            //"args": ["--experimentalAsyncFunctions"],
+            "isBuildCommand": true,
+            //"problemMatcher": "$msCompile",
+            "showOutput": "always",
+            "problemMatcher": [
+                "$lessCompile",
+                "$tsc",
+                "$jshint"
+            ]
+        },
+        {
+            "taskName": "default",
+            //"args": ["--suppressExcessPropertyErrors"],
+            //"args": ["--experimentalAsyncFunctions"],
+            "isBuildCommand": true,
+            //"problemMatcher": "$msCompile",
+            "showOutput": "always",
+            "problemMatcher": [
+                "$lessCompile",
+                "$tsc",
+                "$jshint"
+            ]
+        },
+        {
+            "taskName": "tslint",
+            //"args": [],
+            "isBuildCommand": false,
+            //"problemMatcher": "$msCompile",
+            "showOutput": "always",
+            "problemMatcher": [
+                {
+                    "pattern": {
+                        "regexp": "^([^:]*):(\\d+):(\\d+):(.*)",
+                        "file": 1,
+                        "line": 2,
+                        "column": 3,
+                        "message": 4
+                    },
+                    "fileLocation": [
+                        "absolute"
+                    ]
+                }
+            ]
+        }
+    ]
+}

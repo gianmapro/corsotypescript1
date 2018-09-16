@@ -1,0 +1,28 @@
+{
+  "name": "typescript",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "start": "tsc && concurrently \"tsc -w\" \"lite-server\" ",
+    "lite": "lite-server",
+    "tsc": "tsc",
+    "tscw": "tsc -w"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "tslib": "1.5.0"
+  },
+  "devDependencies": {
+    "@types/node": "7.0.5",
+    "concurrently": "3.3.0",
+    "gulp": "3.9.1",
+    "gulp-sourcemaps": "2.4.1",
+    "gulp-typescript": "3.1.4",
+    "lite-server": "2.2.2",
+    "tslint": "4.4.2",
+    "gulp-tslint": "7.1.0",
+    "typescript": "2.1.6"
+  }
+}

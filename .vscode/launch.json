@@ -1,0 +1,208 @@
+{
+    "version": "0.2.0",
+    "configurations": [
+        {
+            "name": "Launch (Debug)",
+            "type": "node2",
+            "request": "launch",
+            //"program": "${workspaceRoot}/dist/test.js",
+            "program": "${workspaceRoot}/dist/04-modules/app.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "sourceMaps": true, 
+            "outFiles": []
+        },
+        {
+            "name": "Attach (to Chrome)",
+            "type": "node2",
+            "request": "attach",
+            "port": 9229,
+            "address": "localhost",
+            "restart": false,
+            "sourceMaps": true,
+            "outFiles": [],
+            "localRoot": "${workspaceRoot}",
+            "remoteRoot": null
+        },
+        {
+            "name": "Launch (Gulp - Debug)",
+            "type": "node2",
+            "request": "launch",
+            //"program": "${workspaceRoot}/dist/test.js",
+            "program": "${workspaceRoot}/dist/04-modules/app.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": "compile-ts",
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "sourceMaps": true, 
+            "outFiles": []
+        },
+        {
+            "name": "Launch 02 app/classes",
+            "type": "chrome",
+            "request": "launch",
+            //"program": "${workspaceRoot}/dist/test.js",
+            "file": "${workspaceRoot}/src/02-classes/index.html",
+            "webRoot": "${workspaceRoot}",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "sourceMaps": true, 
+            "outFiles": []
+        }, 
+        {
+            "name": "Launch 02 this arrow function",
+            "type": "node2",
+            "request": "launch",
+            //"program": "${workspaceRoot}/dist/test.js",
+            "program": "${workspaceRoot}/dist/02-classes/classes-this-arrow-function.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "sourceMaps": true, 
+            "outFiles": []
+        },    
+        {
+            "name": "Launch 02 composition",
+            "type": "node2",
+            "request": "launch",
+            //"program": "${workspaceRoot}/dist/test.js",
+            "program": "${workspaceRoot}/dist/02-classes/classes-composition.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "sourceMaps": true, 
+            "outFiles": []
+        },
+        {
+            "name": "Launch 02 strictNullChecks",
+            "type": "node2",
+            "request": "launch",
+            //"program": "${workspaceRoot}/dist/test.js",
+            "program": "${workspaceRoot}/dist/02-classes/classes-strictNullChecks.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "sourceMaps": true, 
+            "outFiles": []
+        },
+        {
+            "name": "Launch 03 namespaces",
+            "type": "chrome",
+            "request": "launch",
+            //"program": "${workspaceRoot}/dist/test.js",
+            "file": "${workspaceRoot}/src/03-namespaces/index.html",
+            "webRoot": "${workspaceRoot}",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "sourceMaps": true, 
+            "outFiles": []
+        }, 
+        {
+            "name": "Launch 04 modules",
+            "type": "node2",
+            "request": "launch",
+            //"program": "${workspaceRoot}/dist/test.js",
+            "program": "${workspaceRoot}/dist/04-modules/app.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "sourceMaps": true, 
+            "outFiles": []
+        },  
+        {
+            "name": "Launch 07 async await",
+            "type": "node2",
+            "request": "launch",
+            //"program": "${workspaceRoot}/dist/test.js",
+            "program": "${workspaceRoot}/dist/07-AsyncAwait/async-await.js",
+            "stopOnEntry": false,
+            "args": [],
+            "cwd": "${workspaceRoot}",
+            "preLaunchTask": null,
+            "runtimeExecutable": null,
+            "runtimeArgs": [
+                "--nolazy"
+            ],
+            "env": {
+                "NODE_ENV": "development"
+            },
+            "console": "internalConsole",
+            "sourceMaps": true, 
+            "outFiles": []
+        }  
+    ]
+}
